@@ -1,0 +1,589 @@
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.header{
+    background-color: #e7e6e6;
+} 
+.imege{
+   max-width:  100%;
+}
+.imege img{
+    max-width:  22%;
+}
+.menu{
+    padding-right: 10px;
+}
+.button a {
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: 46px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+    overflow: hidden;
+
+}
+.button a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: blueviolet;
+    border-radius: 46px;
+    visibility: hidden;
+    opacity: 0;
+  
+    transition: ease-out .5s;
+    z-index: -1;
+}
+.button a:hover{
+    color: #fff;
+}
+.button a:hover::after{
+    width: 100%;
+    color: #fff;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.header-menu{}
+.header-menu ul{
+   
+}
+.header-menu ul li{
+    list-style:none ;
+    position: relative;
+}
+.header-menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 13px;
+    color: #000;
+  font-weight: 700;
+  
+}
+.header-menu ul li.jk:nth-child(1) a{
+    color: blueviolet;
+ 
+}
+.header-menu ul li.jk:nth-child(1) a
+.jk{
+    
+}
+.header-menu ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -29px;
+    left: 10px;
+    height: 2.5px;
+    width: 0;
+    background: #8f59ff;
+    transition: .5s;
+}
+.header-menu ul li:hover::after{
+    width: 74%;
+}
+
+.button-2 a{
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: 46px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+    box-shadow:  0 0 12px rgba(17, 17, 17, 0.239);
+}
+.button-2 a:hover{
+    background: rgb(37, 120, 253);
+    color: #fff;
+}
+.slider-section{
+    height: 82vh;
+    overflow: hidden;
+    background-color: #edf6ff;
+     
+}
+.slider-section{
+    display: flex;
+    align-content: center;
+}
+.slider-img{
+  position: relative;
+}
+.slider-img img {
+    height: 685px;
+    width: 690px;
+    border-radius: 50%;
+    position: absolute;
+    left: 78px;
+    top: -16.6rem;
+}
+.slider-content h2 {}
+.slider-content p{}
+
+
+/* servise-section */
+.servise-section{
+    z-index: 1;
+}
+.servise-item {
+    background-color: #f9fcff;
+    padding: 18px;
+    box-shadow: 0 0 10px #1111113d;
+    transition: .4s;
+    border-radius: 6px;
+}
+.servise-item h6 {
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    z-index: 1;
+}
+.icon span {
+    font-size: 22px;
+    background: #6237e9;
+    color: #fff;
+    height: 58px;
+    display: inline-block;
+    line-height: 55px;
+    width: 59px;
+    border-radius: 50% 50% 50% 0;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    
+}
+.icon span::after{
+    content: "";
+    position: absolute;
+     bottom: -17px;
+    left: 0;
+    width: 55%;
+    height: 3px;
+    background: rgb(109, 65, 232);
+    transition: .4s;
+}
+.icon span:hover:after{
+    width: 90%;
+}
+.servise-item:hover{
+  background-color: rgb(84, 35, 245);
+  color: #fff;
+}
+.servise-item:hover .icon span{
+    background: #fff;
+    color: #000;
+}
+.servise-item p{}
+.imgdt{
+    position: relative;
+}
+.imgdt img {
+    position: absolute;
+    top: -12.2rem;
+    left: -3.3rem;
+   z-index: -2;
+}
+/* content-video-css */
+.content-video{
+    background: linear-gradient(rgba(6, 29, 83, 0.616), rgba(0, 37, 122, 0.575),rgba(4, 6, 136, 0.513)), url(img/video-bg.jpg) no-repeat center;
+    background-size:cover;
+    padding: 150px 0;
+    margin-top: 90px;
+}
+
+.sercise-text{
+
+}
+.click-video{
+    height: 70px;
+    width: 70px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+.click-video::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: amimate ease-in-out 1.9s infinite ;
+}
+.click-video::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: amimated ease-in-out 2s infinite ;
+}
+@keyframes amimated {
+    0%{
+        transform: scale( 1);
+       opacity: 0;
+    }
+    25%{
+        transform: scale(.5);
+       opacity: .3;
+    }
+    50%{
+        transform: scale(1);
+        opacity: .5;
+    }
+    75%{
+        transform: scale(1.6);
+        opacity: .8;
+    }
+    100%{
+        transform: scale(1.9);
+        opacity: 0;
+    }
+}
+@keyframes amimate {
+    0%{
+        transform: scale( 0);
+       opacity: 0;
+    }
+    25%{
+        transform: scale(.3);
+       opacity: .3;
+    }
+    50%{
+        transform: scale(1.2);
+      opacity: .5;
+    }
+    75%{
+        transform: scale(1.5);
+        opacity: .8;
+    }
+    100%{
+        transform: scale(1.9);
+        opacity: 0;
+    }
+}
+.click-video span{
+    line-height: 67px;
+    font-size: 20px;
+    color: rgb(27, 106, 255);
+
+}
+.content-text h4{
+    position: relative;
+    word-spacing: 4px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.content-text h4::after{
+    content: "";
+    position: absolute;
+    left: 44%;
+    bottom: -10px;
+    width: 15%;
+    height: 3px;
+    background-color: #fff;
+}
+.sercise-text h2{
+    position: relative;
+}
+.sercise-text h2::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 7%;
+    height: 3px;
+    background: rgb(109, 65, 232);
+    transition: .4s;
+}
+.sercise-text h2:hover:after{
+    width: 12%;
+
+}   
+/* pricingtable */
+.pricingtable{
+    transition: .3s;
+    height: 80vh;
+}
+.pricingtable:hover{
+    background-color: rgb(16, 95, 243);
+}
+.pricingtable:hover .pricing-txt{
+    transition-delay: .4s;
+    color: #fff;
+}
+.pricingtable:hover .button-3 a{
+    background-color: #fff;
+   color: #000;
+}
+.pricingtable:hover .button-3 a:hover{
+
+}
+.pricingtable:hover ul li{
+    transition-delay: .4s;
+    color: #fff;
+}
+.priceinge-table-text h4{
+    position: relative;
+}
+.priceinge-table-text h4::after{
+    content: "";
+    position: absolute;
+    left: 44%;
+    bottom: -10px;
+    width: 15%;
+    height: 3px;
+    background-color: rgb(103, 137, 247);
+}
+.pricingtable{box-shadow: 0 0 10px #dfdfdf;}
+.pricingtable h2{
+    position: relative;
+    margin-bottom: 54px;
+}
+.pricingtable h2::after{
+    content: "";
+    position: absolute;
+    left: 30%;
+    bottom: -60px;
+    width: 41%;
+    height: 2px;
+    background-color: rgb(217 217 217);
+}
+.pricingtable h5{}
+.pricingtable ul{
+    padding: 0;
+}
+.pricingtable ul li{
+    list-style: none;
+    margin-left: -4px;
+    line-height: 34px;
+    color: rgba(47, 47, 47, 0.952);
+     
+} 
+.button-3 a {
+    display: inline-block;
+    text-decoration: none;
+    background: #1d7aff;
+    padding: 7px 33px;
+    border-radius: 46px;
+    font-weight: 600;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    transition: .4s;
+    overflow: hidden;
+    border-color: #1d7aff ;
+}
+.button-3 a::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: #1d7aff;
+        border-radius: 46px;
+        visibility: hidden;
+        opacity: 0;
+        transition: ease-out .5s;
+        z-index: -1;
+        border-color: #095bf3 ;
+    }
+.button-3 a:hover{
+    color: #fff;
+}
+.button-3 a:hover::after{
+    width: 100%;
+    color: #fff;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.button-4 a {
+    display: inline-block;
+    text-decoration: none;
+    background: #1d7aff;
+    padding: 7px 33px;
+    border-radius: 46px;
+    font-weight: 600;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    transition: .4s;
+    overflow: hidden;
+    border-color: #1d7aff ;
+}
+.button-4 a::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: #1d7aff;
+        border-radius: 46px;
+        visibility: hidden;
+        opacity: 0;
+        transition: ease-out .5s;
+        z-index: -1;
+        border-color: #095bf3 ;
+    }
+.button-4 a:hover{
+    color: #fff;
+}
+.button-4 a:hover::after{
+    width: 100%;
+    color: #fff;
+    visibility: visible;
+    opacity: 1;
+    
+}
+/* slider-secend */
+.content-video-2{
+    background: linear-gradient(rgba(17, 75, 209, 0.719), rgba(14, 71, 206, 0.753),rgba(16, 74, 211, 0.774)), url(img/free-bg.jpg) no-repeat center;
+    background-size:cover;
+    padding: 120px 0;
+    margin-top: 90px;
+}
+.fo-2{
+    width: 115% !important;
+    border-radius: 50px;
+}
+.fo {
+    width: 130% !important;
+    margin-left: 20px;
+    border-radius: 50px;
+    background-color: #1d7aff;
+    color: #fff !important;
+    font-weight: 700;
+}
+input{
+    color: #fff !important;
+}
+.button-6 a {
+    display: inline-block;
+    text-decoration: none;
+    background: #1d7aff;
+    padding: 6px 3px;
+    border-radius: 46px;
+    width: 184%;
+    font-weight: 600;
+    margin-left: 16px;
+    margin-top: -4px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    transition: .4s;
+    overflow: hidden;
+    border-color: #1d7aff ;
+}
+.button-6 a::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: #ffffff;
+        border-radius: 46px;
+        visibility: hidden;
+        opacity: 0;
+        transition: ease-out .5s;
+        z-index: -1;
+        border-color: #ffffff ;
+    }
+.button-6 a:hover{
+    color: rgb(0, 0, 0);
+}
+.button-6 a:hover::after{
+    width: 100%;
+    color: #fff;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.button-5 a {
+    display: inline-block;
+    text-decoration: none;
+    background: #1d7aff;
+    padding: 7px 20px;
+    border-radius: 46px;
+    font-weight: 600;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    transition: .4s;
+    overflow: hidden;
+    border-color: #1d7aff ;
+}
+.button-5 a::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: #ffffff;
+        border-radius: 46px;
+        visibility: hidden;
+        opacity: 0;
+        transition: ease-out .5s;
+        z-index: -1;
+        border-color: #ffffff ;
+    }
+.button-5 a:hover{
+    color: rgb(0, 0, 0);
+}
+.button-5 a:hover::after{
+    width: 100%;
+    color: #fff;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.newslater-text{
+    background-color: rgb(18, 99, 230);
+}
+.secend-card-text{}
+.secend-card{
+    background-color: rgb(250, 250, 250);
+}
+.button-5{
+   padding-top: rem;
+   position: relative;
+   top: 2.5rem;
+}
+.secend-card{
+    background-color: #fff;
+}
+.secend-card{
+    position: relative;
+    left: -5rem;
+}
+.main
